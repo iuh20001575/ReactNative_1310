@@ -1,6 +1,16 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    boxShadow: {
+        elevation: 4,
+        shadowColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 1,
+        shadowRadius: 4,
+    },
     container: {
         flex: 1,
     },
@@ -80,16 +90,16 @@ const styles = StyleSheet.create({
         marginTop: 16,
         position: 'relative',
         justifyContent: 'center',
+        borderRadius: 10,
+        backgroundColor: '#fff',
+        borderWidth: 1,
+        borderColor: 'rgba(0, 0, 0, 0.46)',
     },
     pickColorBtnText: {
         padding: 8,
         color: '#000',
         fontSize: 15,
-        fontWeight: '400',
         lineHeight: 17,
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: 'rgba(0, 0, 0, 0.46)',
         textAlign: 'center',
     },
     pickColorBtnIcon: {
@@ -109,12 +119,6 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#CA1536',
         backgroundColor: '#EE0A0A',
-        shadowColor: 'rgba(0, 0, 0, 0.25)',
-        shadowOffset: {
-            width: 4,
-            height: 4,
-        },
-        shadowRadius: 4,
         paddingTop: 12,
         paddingBottom: 9,
         paddingHorizontal: 20,

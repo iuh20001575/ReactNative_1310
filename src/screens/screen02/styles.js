@@ -1,6 +1,17 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    textBold: {
+        fontWeight: '700',
+    },
+    textMedium: {
+        fontSize: 15,
+        lineHeight: 17,
+    },
+    textLarge: {
+        fontSize: 18,
+        lineHeight: 21,
+    },
     container: {
         flex: 1,
     },
@@ -14,12 +25,10 @@ const styles = StyleSheet.create({
         width: 112,
         height: 132,
     },
-    text: {
-        height: 'auto',
+    info: {
+        gap: 9,
         marginTop: 17,
-        color: '#000',
-        fontSize: 15,
-        lineHeight: 17,
+        flex: 1,
     },
     colorPicker: {
         paddingVertical: 10,
@@ -48,6 +57,7 @@ const styles = StyleSheet.create({
             height: 4,
         },
         shadowRadius: 4,
+        elevation: 4,
     },
     footer: {
         flex: 1,
@@ -67,6 +77,7 @@ const styles = StyleSheet.create({
             width: 0,
         },
         shadowRadius: 4,
+        elevation: 10,
     },
     btnText: {
         color: '#F9F2F2',
