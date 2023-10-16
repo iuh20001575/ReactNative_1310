@@ -1,6 +1,6 @@
 import { Image, Pressable, View } from 'react-native';
+import TextCustomize from '../../components/text';
 import styles from './styles';
-import { Text } from 'react-native';
 
 export default function Screen02() {
     return (
@@ -10,14 +10,14 @@ export default function Screen02() {
                     style={styles.image}
                     source={require('../../../assets/vs_black.png')}
                 />
-                <Text style={styles.text}>
+                <TextCustomize style={styles.text}>
                     Điện Thoại Vsmart Joy 3 Hàng chính hãng
-                </Text>
+                </TextCustomize>
             </View>
             <View style={styles.colorPicker}>
-                <Text style={styles.colorPickerText}>
+                <TextCustomize style={styles.colorPickerText}>
                     Chọn một màu bên dưới:
-                </Text>
+                </TextCustomize>
                 <View style={[styles.groupColor]}>
                     <Pressable
                         style={[
@@ -54,7 +54,9 @@ export default function Screen02() {
                 </View>
                 <View style={styles.footer}>
                     <Pressable style={styles.btn}>
-                        <Text style={styles.btnText}>XONG</Text>
+                        <TextCustomize style={styles.btnText}>
+                            XONG
+                        </TextCustomize>
                     </Pressable>
                 </View>
             </View>

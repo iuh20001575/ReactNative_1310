@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     },
     image: {
         flex: 3,
+        width: 'auto',
         marginHorizontal: 30,
     },
     body: {
@@ -78,6 +79,7 @@ const styles = StyleSheet.create({
     pickColorBtn: {
         marginTop: 16,
         position: 'relative',
+        justifyContent: 'center',
     },
     pickColorBtnText: {
         padding: 8,
@@ -95,8 +97,6 @@ const styles = StyleSheet.create({
         width: 11,
         height: 14,
         right: 20,
-        top: '50%',
-        transform: 'translateY(-50%)',
     },
     footer: {
         marginTop: 20,

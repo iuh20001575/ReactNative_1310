@@ -1,11 +1,12 @@
 import { Image, Pressable, View } from 'react-native';
+import Text from '../../components/text';
 import styles from './styles';
-import { Text } from 'react-native';
 
 export default function Screen01() {
     return (
         <View style={styles.container}>
             <Image
+                resizeMode='contain'
                 style={styles.image}
                 source={require('../../../assets/vs_blue.png')}
             />
